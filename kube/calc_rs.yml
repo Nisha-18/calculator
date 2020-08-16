@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: calc-rs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: calc
+  template:
+    metadata:
+      name: calc-pod
+      labels:
+        app: calc
+    spec:
+      containers:
+      - name: calc-cont
+        image: pbeniwal/calculator:v1
+        ports:
+        - containerPort: 8080
