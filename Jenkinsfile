@@ -6,6 +6,12 @@ pipeline {
         sh 'mvn clean compile'
       }
     }
+    
+    stage('Demo') {
+      steps{
+        sh 'echo Hello'
+      }
+    }
 
     stage('Unit Test') {
       steps{
@@ -19,10 +25,6 @@ pipeline {
       }
     }
 
-    stage('Demo') {
-      steps{
-        sh 'echo Hello'
-      }
-    }
+
   }
 }
