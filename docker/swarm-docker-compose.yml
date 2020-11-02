@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  calc:
+    image: pbeniwal/calculator
+    ports:
+      - "8888:8080"
+

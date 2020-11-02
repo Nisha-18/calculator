@@ -2,6 +2,7 @@
 package com.example;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.InetAddress;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +19,9 @@ public class Calculator extends HttpServlet {
         {
           response.setContentType("text/html");
           PrintWriter out= response.getWriter();
-        
+
+	//  InetAddress my_address = InetAddress.getLocalHost();
+
     	  out.println("<html>");
     	  out.println("<body bgcolor=\"Aqua\">");
     	  out.println("<h1>Welcome to StarAgile Oct-2020 DevOps Batch with Prashant Beniwal 1-Nov-2020</h1>");
@@ -43,15 +46,20 @@ public class Calculator extends HttpServlet {
              out.println("<h1>Division</h1>"+ div (a1, a2));
           }
 
-        	out.println("</body>");
-        	out.println("</html>");  
-          }
-        
-          catch(Exception e)
-          {
-              System.out.println("In  exception");
-          }
+	  /*
+          out.println("<br><h2>Serving Container Name: " + my_address.getHostName()+"</h2>");
+          out.println("<br><h2>Serving Container IP: " + my_address.getHostAddress()+"</h2>");
+	  */
+
+          out.println("</body>");
+          out.println("</html>");  
         }
+        
+        catch(Exception e)
+        {
+            System.out.println("In  exception");
+        }
+    }
         public int add(int a, int b) {
             return a + b ;
         }
