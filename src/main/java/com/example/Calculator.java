@@ -24,7 +24,7 @@ public class Calculator extends HttpServlet {
 
     	  out.println("<html>");
     	  out.println("<body bgcolor=\"Aqua\">");
-    	  out.println("<h1>Welcome to StarAgile Oct-2020 DevOps Batch with Prashant Beniwal 1-Nov-2020</h1>");
+    	  out.println("<h1>Welcome to DevOps Demo with Prashant Beniwal 23-Nov-2020</h1>");
         
     	  int a1= Integer.parseInt(request.getParameter("n1"));
           int a2= Integer.parseInt(request.getParameter("n2"));
