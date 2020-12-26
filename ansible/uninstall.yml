@@ -1,0 +1,19 @@
+---
+- hosts: web
+  become: true
+  become_user: root
+  tasks:
+  - name: Remove maven
+    apt:
+       name: maven
+       state: absent
+  - name: Remove java
+    apt:
+       name: openjdk*
+       state: absent
+       autoremove: yes
+  - name: Remove Docker
+    apt:
+       name: docker-ce
+       state: absent
+       autoremove: yes

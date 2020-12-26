@@ -1,0 +1,10 @@
+---
+- hosts: web
+  become: true
+  become_user: root
+  tasks:
+  - name: Install java
+    apt:  update_cache=yes name=openjdk-8-jdk state=present
+  - name: Install maven
+    apt:  name=maven state=present   
+
