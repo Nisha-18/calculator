@@ -5,7 +5,7 @@
   <artifactId>calculator</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
-  <name>Calculator Program for DevOps</name>
+  <name>Calculator Program for DevOps Program</name>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
