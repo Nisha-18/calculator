@@ -20,12 +20,5 @@ pipeline {
       }
     }
 
-    stage ('My Step') {
-      steps{
-        sh 'echo My Step'
-     }
-    }
-
-
   }
 }
