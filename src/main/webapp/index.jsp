@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Calculator</title>
 </head>
-<body bgcolor="Green">
+<body bgcolor="Aqua">
 
 <h1 style="text_align=center">Demo Calculator - by Prashant Beniwal for Star Agile DevOps Program Jan-2021</h1>
 <form action="firstHomePage" method="get">
