@@ -19,5 +19,11 @@ pipeline {
       }
     }
     
+         stage('Name of my choice') {
+      steps{
+        sh 'echo Hello'
+      }
+    }
+    
   }
 }
