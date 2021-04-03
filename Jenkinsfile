@@ -17,13 +17,6 @@ pipeline {
       steps{
         sh 'mvn clean package'
       }
-    }
-    
-         stage('Name of my choice') {
-      steps{
-        sh 'echo Hello'
-      }
-    }
-    
+    }    
   }
 }
