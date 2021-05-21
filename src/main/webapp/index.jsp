@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Calculator</title>
 </head>
-<body bgcolor="Aqua">
+<body bgcolor="Green">
 
 <h1 style="text_align=center">Demo Calculator new - by Prashant Beniwal for Azure Master Class May-2021</h1>
 <form action="firstHomePage" method="get">
