@@ -1,5 +1,5 @@
 
-package com.example;
+package com.example
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.InetAddress;
@@ -61,7 +61,7 @@ public class Calculator extends HttpServlet {
         }
     }
         public int add(int a, int b) {
-            return a + b;
+            return a + b ;
         }
         
 	    public int sub(int a, int b) {
