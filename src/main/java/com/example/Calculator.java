@@ -13,7 +13,7 @@ public class Calculator extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-    puic void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         try
         {
@@ -61,7 +61,7 @@ public class Calculator extends HttpServlet {
         }
     }
         public int add(int a, int b) {
-            return a + b;
+            return a + b +2;
         }
         
 	    public int sub(int a, int b) {
