@@ -12,12 +12,6 @@ pipeline {
         sh 'mvn clean test'
       }
     }
-    
-    stage('DemoStage') {
-      steps{
-        sh 'echo  hello'
-      }
-    }
 
      stage('Package') {
       steps{
