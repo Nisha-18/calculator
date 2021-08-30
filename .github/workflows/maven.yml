@@ -13,5 +13,7 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
         cache: maven
-    - name: Build with Maven
+    - name: Compile with Maven
+      run: mvn compile
+    - name: Test with Maven
       run: mvn test
