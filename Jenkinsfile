@@ -6,6 +6,12 @@ pipeline {
         sh 'mvn clean compile'
       }
     }
+
+    stage('UnitTest') {
+      steps{
+        sh 'mvn clean test'
+      }
+    }
     
   }
 }
