@@ -7,5 +7,10 @@ pipeline {
       }
     }
 
+    stage('UnitTest') {
+      steps{
+        sh 'mvn clean test'
+      }
+    }
   }
 }
