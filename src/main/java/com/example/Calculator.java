@@ -22,7 +22,7 @@ public class Calculator extends HttpServlet {
 
 	//  InetAddress my_address = InetAddress.getLocalHost();
 
-    	  out.println("<html>");
+    	  out.println("<html>")
     	  out.println("<body bgcolor=\"Aqua\">");
     	  out.println("<h1>Welcome to DevOps Program</h1>");
         
