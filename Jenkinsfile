@@ -18,5 +18,12 @@ pipeline {
         sh 'mvn package'
      }
     }
+
+    stage('DemoStage') {
+      steps{
+        sh 'echo Hello'
+     }
+    }
+
   }
 }
