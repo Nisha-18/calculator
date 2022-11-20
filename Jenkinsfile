@@ -25,25 +25,20 @@ pipeline {
      }
     }
     
-/*
     stage('Docker Build') {
       steps {
-      	sh 'pwd'
-        sh ' ls -lrt'
-        sh 'docker build -t pbeniwal/calculatorwithwar:$BUILD_NUMBER .'
+        sh 'docker build -t pbeniwal/mycalcwithwar:v$BUILD_NUMBER .'
       }
     }
     
     stage('Docker Push') {
-    	agent any
       steps {
       	withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
         	sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-          sh 'docker push pbeniwal/calculatorwithwar:$BUILD_NUMBER'
+          sh 'docker push pbeniwal/mycalcwithwar:v$BUILD_NUMBER'
         }
       }
     }
-*/
     
   }
 }
