@@ -27,9 +27,10 @@ pipeline {
     
 */
     stage('Docker Build') {
-    	agent any
       steps {
-      	sh 'docker build -t pbeniwal/calculatorwithwar:$BUILD_NUMBER .'
+      	sh 'pwd'
+        sh ' ls -lrt'
+        sh 'docker build -t pbeniwal/calculatorwithwar:$BUILD_NUMBER .'
       }
     }
     
