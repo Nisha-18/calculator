@@ -1,0 +1,5 @@
+#Taint and Tolerations
+
+kubectl taint nodes <node name> <key>=<value>:<NoSchedule>
+e.g
+kubectl taint nodes ip-192-168-33-100.ec2.internal env=prod:NoSchedule
