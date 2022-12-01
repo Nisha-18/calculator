@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calc-dep-taint
+spec:
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: calc
+  template:
+    metadata:
+      labels:
+        app: calc
+    spec:
+      containers:
+      - name: calc-cont
+        image: pbeniwal/calculator:v1
+        ports:
+        - containerPort: 8080
+      tolerations:
+        - key: "env"
+          operator: "Equal"
+          value: "prod"
+          effect: "NoSchedule"
+
