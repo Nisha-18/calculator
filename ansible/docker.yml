@@ -1,5 +1,5 @@
 ---
-- hosts: web
+- hosts: localhost
   vars:
     container_image: pbeniwal/calculator:v1
     container_name: calculator8888
