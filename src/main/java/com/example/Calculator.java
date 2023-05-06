@@ -18,7 +18,7 @@ public class Calculator extends HttpServlet {
         try
         {
           response.setContentType("text/html");
-          PrintWriter out= response.getWriter()
+          PrintWriter out= response.getWriter();
 
 	//  InetAddress my_address = InetAddress.getLocalHost();
 
@@ -61,7 +61,7 @@ public class Calculator extends HttpServlet {
         }
     }
         public int add(int a, int b) {
-            return a + b ;
+            return a + b + 1;
         }
         
 	    public int sub(int a, int b) {
