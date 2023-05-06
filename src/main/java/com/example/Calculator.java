@@ -18,7 +18,7 @@ public class Calculator extends HttpServlet {
         try
         {
           response.setContentType("text/html");
-          PrintWriter out= response.getWriter();
+          PrintWriter out= response.getWriter()
 
 	//  InetAddress my_address = InetAddress.getLocalHost();
 
