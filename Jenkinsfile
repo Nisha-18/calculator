@@ -19,5 +19,11 @@ pipeline {
         sh 'mvn clean package'
       }
     }
+    
+       stage('Dummy') {
+      steps{
+        sh 'echo hello'
+      }
+    }
   }
 }
